@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Moja pierwsza strona internetowa</title>
+    {% endblock %}
+</head>
+<body>
+    <h1>Witaj na mojej stronie domowej</h1>
+    <p></p>
+	<img src="http://wsny-fm.sagacom.com/wp-content/blogs.dir/16/files/2013/07/Untitled-11.gif">
+    <p></p>
+    <div id="content>">{% block content %}{% endblock %}</div>
+</body>
+</html>
